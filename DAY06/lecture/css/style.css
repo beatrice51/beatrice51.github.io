@@ -3,6 +3,8 @@
 /*! style.css @ baetrice51, 2017 */
 /*!(압축시켜도 지워지지 않음)*/
 
+/* text align 
+부모에게 값을 적용한다. code compact*/
 html {
     font-size: 10px;
     /* rem 단위의 기준 값 */
@@ -110,4 +112,11 @@ img {
     width: 820px;
     margin-left: auto;
     margin-right: auto;
+}
+.header {
+    margin-top: 8.4rem;
+    text-align: center;
+}
+.main {
+    margin-top: 4.2rem;
 }
