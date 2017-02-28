@@ -1,0 +1,113 @@
+@charset "UTF-8";
+/*한글을 모두 표현*/
+/*! style.css @ baetrice51, 2017 */
+/*!(압축시켜도 지워지지 않음)*/
+
+html {
+    font-size: 10px;
+    /* rem 단위의 기준 값 */
+}
+
+body {
+    min-height: 100vh;
+    /* 하위태그가 없다는 전제로 최소값 / 100vh는 사용자가 보는 디바이스의 h값에 맞춤*/
+    margin: 0;
+    background: url("../images/leading-21px.png");
+    /* 본문 디자인(상속)*/
+    /* font: [두께] [기울기] [응용] 크기[/행간] 글꼴; / 속기형 */
+    font: 1.4rem/1.5 "Spoqa Han Sans";
+    /*font-family: "Spoqa Han Sans";
+    font-size: 1.4rem;
+    line-height: 1.5;*/
+    /*속기형을 쓰고 개별 요소는 덮어 쓴다, (overwriting) */
+    /*css는 상속 매커니즘을 사용하기 때문에 단위를 붙이면 버그가 발생 / 모질라 네트위크에 명시됨, 단위를 붙이지 않는 것을 권장함*/
+    letter-spacing: -0.02em;
+    /*글자에 상대적인 값은 em / */
+    color: #333741;
+}
+/*상속이 되는 요소와 상속이 되지 않는 요소를 구별해 설계*/
+/* 제목|단락 공통 디자인 */
+h1,h2,h3,h4,h5,h6,p {
+    margin-top: 0;
+    /*margin-bottom: 1.5em;*/
+    margin-bottom: 2.1rem;
+}
+
+/* 제목 공통 디자인 */
+h1,h2,h3,h4,h5,h6 {
+    font-weight: 300;
+    letter-spacing: -0.05em;
+}
+h1,h2,h3,h4 {
+    font-weight: 300;
+}
+h5,h6 {
+    font-weight: normal;
+    line-height: 2.1rem;
+}
+
+/* 제목 개별 디자인 */
+h1 {
+    font-size: 5.463rem;
+    line-height: 6.3rem;
+}
+/* form은 상속이 되지 않음 */
+/*h2 {}*/
+h3 {
+    font-size: 3.169rem;
+    line-height: 4.2rem;
+}
+/*h4 {}*/
+h5 {
+    font-size: 1.838rem;
+    color: #787f94;
+}
+h6 {
+    font-size: 1.563rem;
+}
+
+/* 목록 공통 디자인 */
+ul, ol {
+/* 웹 브라우저 기본 스타일 (User Agent Style) 제거*/
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-left: 0;
+    list-style-type: none;
+}
+
+/* 목록 개별 디자인 */
+ul {}
+ol {}
+
+/* 목록 항목(아이템) 디자인 */
+li {
+    margin-bottom: 4.2rem;
+}
+/* 하이퍼링크 디자인 */
+a[href] {
+    color: #a744f4;
+    text-decoration: none;
+}
+/* a[~]~의 상태인 a태그를 찾아라 */
+/* 상태 디자인 
+    기본 상태 (Hover State, :link)
+    방문한 상태 (Visited State, :visited)
+    마우스가 올라간 상태 (Hover State, :visited)
+    클릭한(활성) 상태 (Active State, :hover)
+    비활성 상태 (Deactive State, :)
+    포커스 상태 (Focus State)
+*/
+a[href]:hover {
+    color: #573ce1;
+    text-decoration: underline;
+}
+/* 블록 요소 내, 이미지 하단 공간 제거 */
+img {
+    vertical-align: bottom;
+}
+/* 페이지 컨테이너 */
+.container {
+    width: 820px;
+    margin-left: auto;
+    margin-right: auto;
+}
