@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+<head>
+    <meta charset="UTF-8">
+    <title>Block VS Inline</title>
+    <link href="http://spoqa.github.io/spoqa-han-sans/css/SpoqaHanSans-kr.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/layout-tech.css">
+    <!--브라우저 검색을 위한 메타 정보값만 있음-->
+</head>
+<body>
+    <div class="wrapper">
+        <h2>Dummy Image (Wireframe)</h2>
+        <img class="album-image" src="http://placehold.it/350x150" alt="" width="350" height="150">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate aliquid saepe, qui, ducimus sequi quos possimus itaque dignissimos officiis doloremque vero sit ex! Quod quos vero, animi corrupti, placeat dolorem.</p>
+        
+        <hr>
+
+        <h2>Block Element</h2>
+        <!--div, ul, p, dl, section, article, aside, nav, ...-->
+        <!--단락 내 들어오는 element는 block-->
+        <p><div class="block-box">Division Element - block</div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati consectetur unde id dicta. Eaque, fugit nulla! Asperiores eaque cum autem, illum ut aut suscipit repellat eveniet, et laboriosam dolorum dolores?</p>
+        
+        <!--horizontal rule-->
+        <hr>
+
+        <h2>Inline Element</h2>
+        <!--a, span, s, var, ...-->
+        <p><span class="inline-box">Span Element - inline</span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus et itaque obcaecati aut explicabo. Autem magnam voluptas sapiente, pariatur tempora nulla nobis aliquam iusto? Recusandae voluptate maxime quibusdam fugiat ipsum?</p>
+
+        <hr>
+        
+        <h2>Inline Block Element</h2>
+        <!--기본적으로는 inline의 속성을 가지며, width, height, padding, margin 값이 먹는다.-->
+        <!--img, -->
+        <p><span class="inline-block-box">Inline Block Element - inline boxs</span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse, eos, necessitatibus magni, dolor sint adipisci accusamus maiores soluta repellendus velit rerum id. Suscipit itaque quisquam obcaecati expedita veniam distinctio, minima.</p>
+        
+        <hr>
+
+        <a href="http://fastcampus.co.kr" class="ghost-style-link" target="_blank">fast campus</a>
+
+        <hr>
+
+    </div>
+</body>
+</html>
