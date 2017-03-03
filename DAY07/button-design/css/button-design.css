@@ -50,7 +50,8 @@
  color: #fff;
 }
 .focus:focus {
- border-color: #f2434c; 
+ border-color: #f2434c;
+ background: none; 
  color: #f2434c;
 }
 .visited:visited {
