@@ -1,0 +1,60 @@
+/* 고스트 스타일 링크 (고스트 버튼) */
+.ghost-style-link {
+ display: inline-block;
+ border-width: 2px;
+ border-style: solid;
+ margin-top: 2.4rem;
+ margin-right: 2rem;
+ padding: 1.6rem 3rem;
+ font-size: 1.6rem;
+ font-weight: normal;
+ line-height: 1;
+ letter-spacing: -0.03em;
+ text-decoration: none;
+ text-transform: uppercase;
+ transition: all 0.4s ease;
+}
+.type01 {
+ border-color: #fff;
+ color: #fff;
+}
+.type01:hover {
+ border-color: #fff;
+ background: #fff;
+ color: #222;
+}
+.type02 {
+ border-color: #f2434c;
+ background: #f2434c;
+ color: #fff;
+}
+.type02:hover {
+ border-color: #f2434c;
+ background: none;
+ color: #f2434c;
+}
+/* 상태 디자인 */
+.active,.hover,.focus,.visited {
+ border-color: #fff;
+ background: #fff;
+ color: #222;
+}
+.hover:hover {
+ border-color: #f2434c;
+ background: #f2434c;
+ color: #fff;
+}
+.active:active {
+ border-color: #fcb409;
+ background: #fcb409;
+ color: #fff;
+}
+.focus:focus {
+ border-color: #f2434c; 
+ color: #f2434c;
+}
+.visited:visited {
+ border-color: #1aada1;
+ background: #1aada1;
+ color: #fff;
+}

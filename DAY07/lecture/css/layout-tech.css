@@ -1,9 +1,15 @@
+/* :가상클래스 VS ::가상요소(Pseudo Element) */
+p::selection {
+    background: #f3ce00;
+    color: #555;
+}
+/* 사용자가 선택한 영역에 가상의 색을 적용?? 전체적인 분위기나 톤앤매너에 맞출 수 있음, 콜론 앞에 해당요소를 넣으면 따로 다른 css값을 적용 가능 */
 body {
     margin: 0;
 }
 .wrapper {
     /* width, height 속성은 inline 요소에는 적용되지 않는다. (레이아웃에 관한 css가 적용되지 않음) */
-    width: 640px;
+    width: 660px;
     margin-left: auto;
     margin-right: auto;
 }
@@ -27,7 +33,7 @@ hr {
 }
 .inline-block-box {
 /* 화면 표시 방법: inline-block 변경*/
-/* 기본적으로 inline 처럼 보이지만, block 처럼 레이아웃 설정이 가능하다. 상/하 공간 설정 가능. width/height 설정 가능 */
+/* 기본적으로 inline 처럼 보이지만, block 처럼 레이아웃 설정이 가능하다. 상/하 공간 설정 가능. width/height 설정 가능 / 구형 브라우저에서는 구현되지 않음. (IE 8부터 가능)*/
     display: inline-block;
     background: #17ae34;
     color: #f3ce00;
@@ -45,6 +51,7 @@ hr {
     text-transform: uppercase;
     color: #17ae34;
     transition: all 0.4s ease;
+    /* 부드러운 애니매이션 처리 가능 */
 }
 
 .ghost-style-link:hover {
@@ -53,11 +60,24 @@ hr {
     color: #fff;
 }
 
+
 .album-image {
     width: 100%;
     height: auto;
-    margin: 30px 0;
+    margin: 5px;
     border: 8px solid #17ae34;
     padding: 20px;
     background: #fff;
+}
+.album-image2 {
+    /*width: 100%;
+    height: auto;*/
+    margin: 5px;
+    border: 8px solid #ccc;
+    padding: 20px;
+    background: #fff;
+    transition: border-color 340ms;
+}
+.album-image2:hover {
+    border-color: #17ae34;
 }

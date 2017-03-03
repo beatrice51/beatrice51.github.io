@@ -1,0 +1,25 @@
+html {
+    overflow-y: scroll;
+}
+/* ui 축이 움직이지 않게 하기 위함. 모던 브라우저는 높이가 적을 경우에는 스크롤을 보여주지 않기 때문 (IE 6, 7 등은 지원하지 않음) */
+.demo {
+    width: 500px;
+    height: 340px;
+    margin: 3em auto;
+    border: 5px solid #ddd;
+    padding: 1em;
+}
+.o-visible{
+    overflow: visible;
+}
+.o-hidden {
+    overflow: hidden;
+}
+.o-scroll {
+    overflow: scroll;
+/*overflow-x: sroll;
+overflow-y: scroll;*/
+}
+.o-auto {
+    overflow: auto;
+}

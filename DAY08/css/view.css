@@ -1,0 +1,12 @@
+/* display: none; 과 visibility
+스크린 리더가 읽을 수 있고 없고의 차이 */
+
+.v-hidden {
+    color: #333;
+    visibility: hidden;
+}
+/* 눈에 보이지 않는 공간이 필요할 때 */
+.hidden {
+    color: #d9d9d9;
+    display: none;
+}

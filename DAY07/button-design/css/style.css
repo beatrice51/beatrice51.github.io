@@ -1,0 +1,35 @@
+html {
+ font-size: 10px;
+ background: #222
+}
+body {
+ margin: 0;
+ font-size: 1.6rem;
+ font-family: "Spoqa Han Sans";
+ font-weight: 300;
+ line-height: 1.5;
+ color: #fff;
+}
+h1,h3,p {
+ margin-top: 0;
+ margin-bottom: 2.4rem;
+ font-weight: 300;
+}
+h1 {
+ margin-bottom: 4.8rem;
+ font-size: 6.103rem;
+ line-height: 7.2rem;
+}
+h3 {
+ font-size: 3.906rem;
+ line-height: 4.8rem;
+}
+hr {
+ margin: 2.4rem 0;
+ border: 0;
+ border-bottom: 1px solid #c2d6d1;
+}
+.wrapper {
+ width: 660px;
+ margin: 9.6rem auto;
+}

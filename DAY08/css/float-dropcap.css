@@ -1,0 +1,14 @@
+.dropcap {
+    width: 50%;
+}
+/*.dropcap .dropcap_first-child {*/
+.dropcap::first-letter {
+    float: left;
+    margin-right: 10px;
+    font-size: 300px;
+    font-weight: 900;
+    line-height: 1;
+    text-transform: uppercase;
+    color: orange;
+}
+/* them ?? */
