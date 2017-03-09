@@ -1,0 +1,87 @@
+body {
+ margin: 0;
+}
+.parent-box {
+ box-sizing: border-box;
+ /* border 값까지 height 값에 포함 */
+ position: relative;
+ height: 100vh;
+ border: 10px solid #aaa;
+}
+.box {
+ position: absolute;
+ width: 200px;
+ height: 180px;
+ color: #fff;
+ text-align: center;
+ line-height: 180px;
+}
+.box:nth-child(1) {
+ z-index: 20;
+ background: #e6aa57;
+}
+.box:nth-child(2) {
+ z-index: 10;
+ background: #e7381b;
+}
+.box:nth-child(3) {
+ z-index: 30;
+ background: #d7a4e6;
+}
+.box:nth-child(4) {
+ z-index: 40;
+ background: #a4e6d1;
+}
+
+/*.center-box {
+ position: absolute;
+ top: 50%;
+ left: 50%;
+ margin-top: -100px;
+ margin-left: -90px;
+ background: #333;
+}*/
+.center-box {
+ position: absolute;
+ top: 0;
+ left: 0;
+ bottom: 0;
+ right: 0;
+ margin: auto;
+ background: #333;
+}
+/* target의 width와 height의 반값만큼 margin값을 준다. 유지보수하기에는 좋지 않음. */
+.vertex-lt{
+ left: 0;
+ top: 0;
+}
+.vertex-lb {
+ left: 0;
+ bottom: 0;
+}
+.vertex-rt {
+ right: 0;
+ top: 0;
+}
+.vertex-rb {
+ right :0;
+ bottom: 0;
+}
+/* z-index는 1단위보다는 10단위로 주는 것이 좋다. */
+.target {
+ position: relative;
+ display: inline-block;
+ margin-left: 100px;
+ margin-top: 100px;
+ text-decoration: none;
+ text-transform: uppercase;
+}
+.target::after {
+ content: '';
+ position: absolute;
+ top: 0;
+ left: 50%;
+ bottom: 0;
+ right: 50%;
+ 
+}
