@@ -1,0 +1,132 @@
+html {
+ font-size: 10px;
+}
+body {
+ margin: 0;
+ height: 100vh;
+ background: #111;
+}
+p {
+ margin-top: 0;
+ margin-bottom: 0;
+ text-shadow: 4px 4px 15px #101010;
+}
+.banner {
+ overflow: hidden;
+ position: absolute;
+ width: 800px;
+ height: 320px;
+ top: 0;
+ right: 0;
+ bottom: 0;
+ left: 0;
+ margin: auto;
+ background: #0e141f;
+}
+.img * {
+ position: absolute;
+}
+.moon {
+ width: 250px;
+ height: 250px;
+ background: radial-gradient(circle, #f4f0a2, #0e141f 75%);
+}
+.star {
+ background: radial-gradient(circle, #f4f0a2, #0e141f 75%);
+}
+.star01 {
+ top: 20px;
+ right: 210px;
+ width: 20px;
+ height: 20px;
+}
+.star02 {
+ top: 40px;
+ left: 300px;
+ width: 15px;
+ height: 15px;
+}
+.star03 {
+ top: 10px;
+ right: 300px;
+ width: 10px;
+ height: 10px;
+}
+.star04 {
+ top: 70px;
+ right: 100px;
+ width: 20px;
+ height: 20px;
+}
+.star05 {
+ top: 20px;
+ left: 250px;
+ width: 10px;
+ height: 10px;
+}
+.star06 {
+ top: 20px;
+ right: 350px;
+ width: 13px;
+ height: 13px;
+}
+.star07 {
+ top: 60px;
+ right: 200px;
+ width: 10px;
+ height: 10px;
+}
+.star08 {
+ top: 100px;
+ right: 310px;
+ width: 10px;
+ height: 10px;
+}
+.star09 {
+ top: 90px;
+ right: 30px;
+ width: 10px;
+ height: 10px;
+}
+.moon_rabbit {
+ width: 150px;
+ top: 0;
+ right: 0;
+ bottom: 0;
+ left: 0;
+ margin: auto;
+}
+.snow_hill {
+ width: 900px;
+ top: 120px;
+ left: -80px;
+}
+.snow_hill_back {
+ width: 500px;
+ bottom: 40px;
+ opacity: 0.8;
+}
+.cook_rabbits_01 {
+ width: 150px;
+ bottom: 55px;
+ right: 11px;
+ opacity: 0.7;
+}
+.cook_rabbit_02 {
+ width: 150px;
+ bottom: 52px;
+ left: 260px;
+}
+.main_rabbit {
+ width: 250px;
+ top: 70px;
+ right: 125px;
+}
+.title {
+ position: absolute;
+ top: 10px;
+ right: 10px;
+ font: 700 3.3rem/1.5 "Lobster";
+ color: #f4f0a2;
+ opacity: 0.7
+}
