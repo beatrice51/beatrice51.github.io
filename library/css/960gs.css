@@ -50,7 +50,7 @@
 .row {
  margin-bottom: 24px;
 }
-.row::after {
+.row::after, .clearfix {
  content: '';
  display: block;
  clear: both;
