@@ -1,0 +1,244 @@
+@charset "utf-8";
+html {
+    font-size: 10px;
+}
+
+body {
+    min-height: 100vh;
+    margin: 0;
+    background: url("../images/leading-24px.png");
+    font: 1.6rem/1.5 "Spoqa Han Sans";
+    letter-spacing: -0.02em;
+    color: #444;
+}
+
+/*! grid-system.css © beatrice51.github.io, 2017 */
+.grid-toggle-btn {
+  cursor: pointer;
+  position: fixed;
+  z-index: 10000;
+  top: 10px;
+  right: 10px;
+  border: none;
+  padding: 1em 2em;
+  background: #000;
+  color: #fff;
+  border-radius: 4px;
+  transition: all 0.4s;
+}
+.grid-toggle-btn:hover,
+.grid-toggle-btn:focus {
+  background: #fe4940;
+}
+
+.show-grid {
+  position: relative;
+}
+
+.show-grid::before {
+  content: '';
+  position: absolute;
+  z-index: 10000;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 500vh;
+  background: linear-gradient(transparent 23px, hsla(23, 40%, 73%, 0.78) 23px);
+  background-size: 1px 24px;
+}
+
+/* container module */
+.container {
+ width: 1080px;
+ margin-left: auto;
+ margin-right: auto;
+}
+.show-grid .container {
+ position: relative;
+}
+.show-grid .container::before {
+ content: '';
+ position: absolute;
+ z-index: 10000;
+ top: 0;
+ left: 0;
+ right: 0;
+ height: auto;
+/* 실제 이미지 사용 방법 */
+/*background: url("../images/1080__10-70-10.png")*/
+/* CSS 배경 이미지 기술 활용: 선형 그레디언트(linear-gradient)*/
+ background: linear-gradient(90deg, transparent 10px, hsla(32, 90%, 92%, 0.55) 10px, hsla(32, 90%, 92%, 0.55) 80px, transparent 80px);
+ background-size: 90px 1px;
+}
+
+/* row module */
+.row {
+ margin-top: 48px;
+ margin-bottom: 48px;
+}
+.row::after {
+ content: '';
+ display: block;
+ clear: both;
+}
+/* column module */
+.col-1,.col-2,.col-3,.col-4,.col-5,.col-6,.col-7,.col-8,.col-9,.col-10,.col-11,.col-12 {
+ float: left;
+ margin-left: 10px;
+ margin-right: 10px;
+}
+.col-1 { width: 70px; }
+.col-2 { width: 160px; }
+.col-3 { width: 250px; }
+.col-4 { width: 340px; }
+.col-5 { width: 430px; }
+.col-6 { width: 520px; }
+.col-7 { width: 610px; }
+.col-8 { width: 700px; }
+.col-9 { width: 790px; }
+.col-10 { width: 880px; }
+.col-11 { width: 970px; }
+.col-12 { width: 1060px; }
+
+/* 제목|단락 공통 디자인 */
+h1,h2,h3,h4,h5,h6,p {
+    margin-top: 0;
+    /*margin-bottom: 1.5em;*/
+    margin-bottom: 2.4rem;
+}
+/* 제목 공통 디자인 */
+h1,h2,h3,h4,h5,h6 {
+ font-weight: 300;
+ letter-spacing: -0.05em;
+}
+h1,h2,h3,h4,h5 {
+ text-transform: uppercase;
+}
+h2,h3,h4 {
+    line-height: 4.8rem;
+}
+h5,h6 {
+    line-height: 2.4rem;
+}
+/* 제목 개별 디자인 */
+h1 {
+    font-size: 6.103rem;
+    line-height: 7.2rem;
+}
+h2 {
+    font-size: 4.882rem;
+}
+h3 {
+    font-size: 3.906rem;
+}
+h4 {
+    font-size: 3.125rem;
+}
+h5 {
+    font-size: 2.5rem;
+    font-weight: normal;
+}
+h6 {
+    font-size: 2rem;
+}
+/* layout */
+
+/* COMMON */
+.clearfix::after {
+ content: '';
+ display: block;
+ clear: both;
+}
+img {
+ vertical-align: top;
+}
+a { 
+ text-decoration: none;
+}
+/* NAV */
+nav {
+ background: #e25147;
+}
+.nav {
+ padding-top: 4.8rem;
+ padding-bottom: 2.4rem;
+ color: #fff;
+}
+.logo {
+ width: 300px;
+ float: left;
+}
+.nav ul {
+ float: right;
+}
+.nav li {
+ float: left;
+ margin-left: 20px;
+}
+.nav li:last-child {
+ margin-left: 70px;
+}
+.nav a {
+ display: inline-block;
+ color: #fff;
+ padding-left: 10px;
+ padding-right: 10px;
+ text-transform: uppercase;
+}
+.nav a:hover {
+ color: #fff;
+ text-transform: uppercase;
+}
+
+/* PAGE */
+.page h4 {
+ position: relative;
+ text-align: center;
+}
+.page h4::after {
+ content: '';
+ position: absolute;
+ top: 0;
+ left: 0;
+ right: 0;
+ height: 4.8rem;
+ background: linear-gradient(transparent 4.7rem, hsla(4, 73%, 58%, 1) 4.7rem);
+ background-size: 0.1rem 4.8rem;
+}
+.page h5 {
+ text-align: center;
+}
+/* PAGE SECTION - 01 TICKET OPEN */
+.ticket_open dl {
+ margin-top: 2.4rem;
+}
+.ticket_open dt {
+ font-weight: 400;
+}
+.ticket_open dd {
+ font-weight: 300;
+}
+.ticket_open a:hover dl {
+ color: #e25147;
+ font-weight: 700;
+} 
+/* PAGE SECTION - 02 SPECIAL PRICE */
+.price_section {
+ margin-top: 2.4rem;
+}
+.price_section p {
+ text-align: center;
+ margin-bottom: 0;
+}
+.price_section a:hover p {
+ color: #e25147;
+ font-weight: 700;
+}
+/* FOOTER */
+footer {
+ background: #e25147;
+ color: #fff;
+ padding-top: 4.8rem;
+ padding-bottom: 2.4rem;
+ text-align: center;
+}
