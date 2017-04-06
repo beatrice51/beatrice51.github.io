@@ -1,0 +1,18 @@
+.box {
+ height: auto;
+ line-height: 1;
+ font-size: 1.24em;
+ color: #333;
+}
+.box.is-1 { background: hsla(0, 59%, 54%, 1) }
+.box.is-2 { background: hsla(30, 59%, 54%, 1) }
+.box.is-3 { background: hsla(60, 59%, 54%, 1) }
+.box.is-4 { background: hsla(90, 59%, 54%, 1) }
+.box.is-5 { background: hsla(120, 59%, 54%, 1) }
+.box.is-6 { background: hsla(150, 59%, 54%, 1) }
+.box.is-7 { background: hsla(180, 59%, 54%, 1) }
+.box.is-8 { background: hsla(210, 59%, 54%, 1) }
+.box.is-9 { background: hsla(240, 59%, 54%, 1) }
+.box.is-10 { background: hsla(270, 59%, 54%, 1) }
+.box.is-11 { background: hsla(300, 59%, 54%, 1) }
+.box.is-12 { background: hsla(330, 59%, 54%, 1) }

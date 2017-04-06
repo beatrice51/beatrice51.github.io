@@ -1,0 +1,136 @@
+/* ! style. css */
+body {
+ font-family: "Nanum Square";
+}
+
+.a11y-hidden {
+  overflow: hidden;
+  position: absolute;
+  clip:     rect(0 0 0 0); /* IE 6,7 */
+  clip:     rect(0,0,0,0);
+  width:    1px;
+  height:   1px;
+  margin:   -1px;
+  border:   0;
+  padding:  0;
+}
+.a11y-hidden.focusable:focus {
+  overflow: visible;
+  position: static;
+  clip:     auto;
+  width:    auto;
+  height:   auto;
+  margin:   0;
+}
+caption.a11y-hidden { position: static; }
+
+a {
+ text-decoration: none;
+}
+
+.brand {
+ margin-top: 42px;
+}
+/* 5 = 5/14 // 0.3571em
+10 = 10/14 // 0.7142em */
+.login, .search-bar {
+ margin-top: 61px;
+}
+.login a {
+ display: inline-block;
+ border-radius: 3px;
+ border: 1px solid transparent;
+ padding: 0.5571em 0.7142em 0.3571em;
+ color: #991717;
+ transition: all 0.4s ease;
+}
+.login a:hover,
+.login a:focus {
+ border-color: #bd1d31;
+}
+.login a:focus {
+ outlines: none;
+}
+.login__link-join {
+ margin-left: 2px;
+}
+.login__link-login {
+ margin-left: 18px;
+}
+/*0.8571em
+1.2857em*/
+.search-bar {
+    position: relative;
+}
+input#search {
+ width: 380px;
+ position: absolute;
+ left: -20px;
+ border: 2px solid #555656;
+ padding: 0.8571em 1.2857em 0.8571em;
+ box-sizing: border-box;
+}
+::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+  color: #999;
+}
+::-moz-placeholder { /* Firefox 19+ */
+  color: #999;
+}
+:-ms-input-placeholder { /* IE 10+ */
+  color: #999;
+}
+::input-placeholder { /* Firefox 18- */
+  color: #999;
+}
+
+/* GNB */
+.gnb {
+
+}
+.gnb ul {
+ margin-top: 0;
+ margin-bottom: 0;
+ padding-left: 0;
+ list-style: none;
+}
+.gnb li {
+ float: left;
+ margin-left: 15px;
+}
+.gnb li:nth-child(1) {margin-left: 1px;}
+.gnb li:nth-child(2) {margin-left: 24px;}
+.gnb li:nth-child(3) {margin-left: 21px;}
+.gnb li:nth-child(4) {margin-left: 21px;}
+.gnb li:nth-child(5) {margin-left: 22px;}
+.gnb li:nth-child(6) {margin-left: 21px;}
+.gnb li:nth-child(7) {margin-left: 22px;}
+.gnb li:nth-child(8) {margin-left: 21px;}
+.gnb li:nth-child(9) {
+
+}
+.gnb li:nth-child(10) {
+
+}
+.gnb li:nth-child(11) {
+
+}
+.gnb a {
+ display: inline-block;
+ border-bottom: 2px solid transparent;
+ padding: 0.3571em 1.0714em;
+ text-transform: uppercase;
+ color: #333;
+ font-size: 14px;
+ transition: all .3s ease;
+}
+.gnb a:hover,
+.gnb a:focus {
+ color: #bd1d31;
+ border-bottom-color: #bd1d31;
+}
+.gnb a:active {
+ border-radius: 2px;
+ border-bottom-color: #bd1d31;
+ background: #bd1d31;
+ color: #fff;
+}

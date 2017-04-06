@@ -1,0 +1,152 @@
+/* ! page.css ⓒ beatrice51.github.io */
+
+html {
+ overflow-y: visible;
+ min-height: 200vh;
+ font-size: 10px;
+}
+
+body {
+}
+
+/* readable hidden */
+.readable-hidden {
+  overflow: hidden;
+  position: absolute;
+  clip:     rect(0 0 0 0); /* IE 6,7 */
+  clip:     rect(0,0,0,0);
+  width:    1px;
+  height:   1px;
+  margin:   -1px;
+  border:   0;
+  padding:  0;
+}
+.readable-hidden.focusable:focus {
+  overflow: visible;
+  position: static;
+  clip:     auto;
+  width:    auto;
+  height:   auto;
+  margin:   0;
+}
+caption.readable-hidden { position: static; }
+
+/* a, img element */
+a {
+ text-decoration: none;
+  color: #222;
+}
+img {
+ vertical-align: top;
+}
+/* ally-hidden */
+.a11y-hidden {
+  overflow: hidden;
+  position: absolute;
+  clip:     rect(0 0 0 0); /* IE 6,7 */
+  clip:     rect(0,0,0,0);
+  width:    1px;
+  height:   1px;
+  margin:   -1px;
+  border:   0;
+  padding:  0;
+}
+.a11y-hidden.focusable:focus {
+  overflow: visible;
+  position: static;
+  clip:     auto;
+  width:    auto;
+  height:   auto;
+  margin:   0;
+}
+.caption.a11y-hidden { position: static; }
+
+/* page header */
+.page-header {
+ min-height: 8rem;
+ font-family: "Varela Round";
+}
+.brand, .gnb {
+  position: relative;
+ margin-top: 3rem;
+ font-size: 1.4rem;
+ text-transform: capitalize;
+}
+.brand {
+ position: relative;
+}
+.brand a {
+  text-indent: -9999px;
+}
+.hamberger {
+  width: 13px;
+  height: 13px;
+  display: block;
+ position: absolute;
+ margin-left: 30px;
+ top: 4px;
+ background: url("../images/svg-icon-hamberger.svg") no-repeat;
+}
+.logo {
+  height: 19px;
+  display: block;
+  margin-left: 82px;
+  background: url("../images/svg-logo-aware.svg") no-repeat;
+}
+.gnb li {
+ float: left;
+}
+
+.menu {
+  position: absolute;
+  top: 5px;
+}
+.menu li {
+ margin-right: 30px;
+}
+.menu li a {
+ padding-right: 16px;
+ background: url("../images/svg-icon-arrow-down.svg") no-repeat 100% 50%;
+}
+.menu li:last-child {
+ margin-right: 0;
+}
+
+.buttons {
+  position: absolute;
+  top: 2px;
+}
+.buttons li {
+ margin-right: 54px;
+}
+.buttons li:first-child {
+  width: 16px;
+  height: 16px;
+ background: url("../images/svg-icon-bag.svg") no-repeat;
+}
+.buttons li:nth-child(2) {
+  width: 16px;
+  height: 16px;
+ background: url("../images/svg-icon-face.svg") no-repeat;
+}
+.buttons li:last-child {
+  width: 16px;
+  height: 16px;
+ margin-right: 30px;
+ background: url("../images/svg-icon-search.svg") no-repeat;
+}
+.buttons a {
+  text-indent: -9999px;
+}
+
+/* page-banner */
+.page-banner {
+ min-height: 480px;
+}
+.content {
+  min-height: 480px;
+  background: url("../images/main-banner-img.jpg") no-repeat;
+}
+.slides a:hover .hover {
+  display: visible;     
+}
