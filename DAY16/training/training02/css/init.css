@@ -1,0 +1,18 @@
+@charset "utf-8";
+body {
+ margin: 0;
+}
+body {
+ min-height: 200vh;
+ margin: 0;
+ background: url("../images/leading-24px.png");
+ font: 1.6rem/1.5 "Spoqa Han Sans";
+ letter-spacing: -0.02em;
+ color: #444;
+}
+
+/* 제목|단락 공통 디자인 */
+h1,h2,h3,h4,h5,h6,p {
+ margin-top: 0;
+ margin-bottom: 2.4rem;
+}

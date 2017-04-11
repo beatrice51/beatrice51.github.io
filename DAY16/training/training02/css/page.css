@@ -1,0 +1,311 @@
+@charset "utf-8";
+/* style.css © beatrice.github.io, 2017 */
+
+/* .container*/
+.container {
+ width: 1080px;
+}
+/* COMMON */
+.clearfix::after {
+ content: '';
+ display: block;
+ clear: both;
+}
+img {
+ vertical-align: top;
+}
+a {
+ text-decoration: none;
+}
+
+/* NAV */
+nav {
+ min-height: 120px;
+ text-transform: uppercase;
+}
+.nav-wrapper {
+ padding-top: 4.8rem;
+}
+/* 로고 */
+.logo {
+ font-family: "Eater Caps"; 
+ font-size: 2.5rem;
+ line-height: 1.5;
+ margin-bottom: 0;
+}
+.logo a {
+ color: #e25147;
+}
+/* 메뉴 */
+.nav li {
+ float: left;
+ margin-left: 3rem;
+}
+.nav li:first-child {
+ margin-left: 0;
+}
+.nav ul a {
+ display: inline-block;
+ color: #444;
+}
+/* 로그인, 가입 */
+.membership a {
+ margin-left: 1rem;
+ color: #444;
+}
+.membership a:first-child {
+ margin-left: 0;
+}
+.membership a:hover,
+.membership a:focus {
+ color: #e25147;
+}
+/* 상태 디자인 */
+.nav ul a:hover,
+.nav ul a:focus {
+ border-bottom: 2px solid #e25147;
+}
+
+/* Banner */
+.banner-wrapper {
+ z-index: -1;
+ height: 408px;
+}
+.banner {
+ min-width: 1080px;
+ background-image: url("https://s-media-cache-ak0.pinimg.com/originals/6a/8c/3b/6a8c3b192aabcdc346dc39fcbcf6f87f.png");
+}
+.banner-content {
+ padding-top: 120px;
+ text-align: center;
+ text-shadow: 1px 1px 2px #333;
+ color: #fff;
+}
+.banner-title {
+ text-transform: none;
+}
+.ticketing-button {
+ display: inline-block;
+ padding: 12px 24px;
+ border: 2px solid #fff;
+ border-radius: 30px;
+ color: #fff;
+ font-weight: bold;
+ text-transform: uppercase;
+ text-shadow: none;
+ transition: all .4s ease;
+}
+.ticketing-button:hover {
+ border: 2px solid #e25147;
+ background: #e25147;
+ color: #fff;
+}
+
+/* CONTENTS */
+.contents h4 {
+ position: relative;
+ text-align: center;
+}
+.contents h4::after {
+ content: '';
+ position: absolute;
+ top: 0;
+ left: 0;
+ right: 0;
+ height: 4.8rem;
+ background: linear-gradient(transparent 4.7rem, hsla(4, 73%, 58%, 1) 4.7rem);
+ background-size: 0.1rem 4.8rem;
+}
+.contents h5 {
+ text-align: center;
+}
+
+/* CONTENTS SECTION - 01 TICKET OPEN */
+.ticket_open dl {
+ color: #444;
+ margin-top: 2.4rem;
+}
+.ticket_open dt {
+ font-weight: 400;
+}
+.ticket_open dd {
+ font-weight: 300;
+}
+.ticket_open a:hover dl {
+ color: #000;
+ font-weight: 700;
+}
+
+/* CONTENTS SECTION - 02 Ranking */
+.rank-image {
+ float: left;
+ width: 6rem;
+ height: 6rem;
+ top: -4px;
+ margin-left: 2rem;
+ margin-right: 2rem;
+ border-radius: 5px;
+}
+.ranking li {
+ position: relative;
+ border-right: 1px solid #d9d9d9;
+ border-left: 1px solid #d9d9d9;
+ border-bottom: 1px solid #d9d9d9;
+}
+.ranking a {
+ display: inline-block;
+ padding-top: 2.2rem;
+ padding-bottom: 1.3rem;
+}
+.ranking li:first-child {
+ font-size: 2.5rem;
+ text-transform: uppercase;
+ padding-top: 0.4rem;
+ padding-bottom: 0.5rem;
+ padding-left: 2rem;
+ border: 1px solid #d9d9d9;
+ border-top-left-radius: 5px;
+ border-top-right-radius: 5px;
+}
+.ranking li:last-child {
+ border-bottom-left-radius: 5px;
+ border-bottom-right-radius: 5px;
+}
+.ranking-numbered {
+ position: absolute;
+ top: 14px;
+ left: 13px;
+ z-index: 10;
+ padding-left: 5px;
+ padding-right: 5px;
+ font-weight: 700;
+ color: #fff;
+ background-color: #e25147;
+ border: 1px solid #fff;
+ border-radius: 2px;
+}
+.rank-show {
+ display: inline-block;
+ color: #444;
+}
+.show-name {
+ font-weight: 400;
+}
+.show-venue {
+ font-weight: 300;
+}
+/* 상태 디자인 */
+.ranking a:hover .rank-show,
+.ranking a:focus .rank-show {
+ color: #000;
+}
+.ranking a:hover .ranking-numbered,
+.ranking a:focus .ranking-numbered {
+ background-color: #e9392d;
+}
+.ranking a:hover,
+.ranking a:focus {
+ background: #f9f9f9;
+}
+/* CONTENTS SECTION - 03 SPECIAL PRICE */
+.price_wrapper {
+ margin-top: 2.4rem;
+}
+.price-img-wrapper {
+ overflow: hidden;
+ border-radius: 5px;
+ border: 1px solid #e25147;
+}
+.price_wrapper p {
+ margin-bottom: 0;
+ padding-top: 1.1rem;
+ padding-bottom: 1.1rem;
+ color: #fff;
+ text-align: center;
+ background:#e25147;
+ /*border: 1px solid #e25147;*/
+ transition: all .2s ease;
+}
+.price_wrapper a:hover p {
+ background: #e9392d;
+ color: #fff;
+}
+.price_wrapper a:hover img {
+ opacity: 0.8;
+}
+/* CONTENTS SECTION - 04 Review */
+.reivew-wrapper {
+ margin-top: 4.8rem;
+ margin-bottom: 4.8rem;
+}
+.review-image-wrapper {
+ width: 120px;
+ min-height: 120px;
+ margin-left: 14px;
+ border-radius: 50%;
+}
+.review-text p {
+ margin-bottom: 0;
+}
+.review-show-name {
+ font-weight: 400;
+}
+.review-score { color : #e25147; }
+/* CONTENTS SECTION - 05 Open & Close */
+.open_close {
+ margin-bottom: 4.8rem;
+}
+.open_close a {
+ color: #444;
+}
+.open_close .open-show-list-wrapper,
+.open_close .close-show-list-wrapper {
+ width: 100%;
+ padding-top: 2.4rem;
+ padding-bottom: 2.3rem;
+ margin-bottom: 0;
+ border-right: 1px solid #d9d9d9;
+ border-left: 1px solid #d9d9d9;
+ border-bottom: 1px solid #d9d9d9;
+}
+.open-show-name a:last-child p,
+.close-show-name a:last-child p {
+ margin-bottom: 0;
+}
+.open_close .open-show-title,
+.open_close .close-show-title {
+ font-size: 2.5rem;
+ text-transform: uppercase;
+ padding-top: 0.4rem;
+ padding-bottom: 0.5rem;
+ padding-left: 2rem;
+ border: 1px solid #d9d9d9;
+ border-top-left-radius: 5px;
+ border-top-right-radius: 5px;
+}
+.open_close .open-show-more,
+.open_close .close-show-more {
+ font-size: 2.5rem;
+ text-transform: uppercase;
+ padding-top: 0.4rem;
+ padding-bottom: 0.5rem;
+ padding-left: 2rem;
+}
+.open_close .open-show-more,
+.open_close .close-show-more {
+ border-bottom-left-radius: 5px;
+ border-bottom-right-radius: 5px;
+}
+/* 상태 디자인 */
+.open_close a:hover,
+.open_close a:focus {
+ color: #000;
+}
+/* FOOTER */
+footer {
+ background: #e25147;
+ color: #fff;
+ padding-top: 4.8rem;
+ padding-bottom: 2.4rem;
+ text-align: center;
+}

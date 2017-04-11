@@ -1,0 +1,40 @@
+html {
+ font-size: 10px;
+}
+
+/* 제목 공통 디자인 */
+h1,h2,h3,h4,h5,h6 {
+ font-weight: 300;
+ letter-spacing: -0.05em;
+}
+h1,h2,h3,h4,h5 {
+ text-transform: uppercase;
+}
+h2,h3,h4 {
+ line-height: 4.8rem;
+}
+h5,h6 {
+ line-height: 2.4rem;
+}
+/* 제목 개별 디자인 */
+h1 {
+ font-size: 6.103rem;
+ line-height: 7.2rem;
+}
+h2 {
+ font-size: 4.882rem;
+}
+h3 {
+ font-size: 3.906rem;
+}
+h4 {
+ margin-top: 4.8rem;
+ font-size: 3.125rem;
+}
+h5 {
+ font-size: 2.5rem;
+ font-weight: normal;
+}
+h6 {
+ font-size: 2rem;
+}
